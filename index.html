@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="cz">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>NFT&Holder 2022</title>
+    <link rel="icon" href="assets/img/favicon.png">
+    <link rel="stylesheet" href="assets/css/fonts.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+    <div class="main-wrapper">
+        <nav class="navigation mobile">
+            <img src="assets/img/close.png" alt="close" class="menu-close-img">
+            <ul class="nav-list mobile flex column">
+                <li class="nav-list-item" onclick="scrollToElem('.hero-video-wrapper'),menuClosing()">
+                    <img src="assets/img/svg/logo.svg" alt="logo" class="logo-img" loading="lazy"> 
+                </li>
+                <li class="nav-list-item hero active" onclick="scrollToElem('#hero'),menuClosing()">Domov</li>
+                <li class="nav-list-item benefits" onclick="scrollToElem('#benefits'),menuClosing()">Benefity</li>
+                <li class="nav-list-item about" onclick="scrollToElem('#about'),menuClosing()">O platformě</li>
+                <li class="nav-list-item bitcoin" onclick="scrollToElem('#bitcoin'),menuClosing()">Co je to bitcoin?</li>
+                <li class="nav-list-item nft" onclick="scrollToElem('#nft'),menuClosing()">Co je NFT?</li>
+            </ul>
+        </nav>
+        <header class="header" id="header">
+            <div class="container flex just-btwn center">
+                <img src="assets/img/svg/logo.svg" alt="logo" class="logo-img" onclick="scrollToElem('.hero-video-wrapper')" loading="lazy">
+                <nav class="navigation">
+                    <ul class="nav-list flex center just-center">
+                        <li class="nav-list-item hero active" onclick="scrollToElem('#hero')">Domov</li>
+                        <li class="nav-list-item benefits" onclick="scrollToElem('#benefits')">Benefity</li>
+                        <li class="nav-list-item about" onclick="scrollToElem('#about')">O platformě</li>
+                        <li class="nav-list-item bitcoin" onclick="scrollToElem('#bitcoin')">Co je to bitcoin?</li>
+                        <li class="nav-list-item nft" onclick="scrollToElem('#nft')">Co je NFT?</li>
+                    </ul>
+                </nav>
+                <button class="btn action-btn" onclick="scrollToElem('#lower-form')">
+                    ZAREGISTRUJTE SE NYNÍ
+                </button>
+                <img src="assets/img/hamburger.png" alt="menu" class="menu-open-img" loading="lazy">
+            </div>
+        </header>
+        <main>
+            <section class="hero-section">
+                <div class="container flex just-btwn" id="hero">
+                    <div class="hero-video-wrapper">
+                        <h1 class="main-heading">
+                            Ponořte se do světa obchodování
+                        </h1>
+                        <h4 class="main-subheading">
+                            NFT&Holder vám přináší příležitost vydělat skutečné peníze obchodováním s NFT a kryptoměnami.
+                        </h4>
+                        <div class="video">
+                            <video 
+                                poster="assets/video/poster.png" 
+                                width="100%" 
+                                playsinline 
+                                controls 
+                                controlsList="nodownload"
+                                ></video>
+                            <div class="play-btn"></div>
+                        </div>
+                    </div>
+                    <div id="form" class="hero-form-wrapper form">
+                        <h4 class="form-heading text-colored">
+                            ZAČNĚTE ZMĚNIT SVŮJ ŽIVOT OD DNES
+                        </h4>
+                        <form action="thankyou.html" onsubmit="event.preventDefault(); formSubmission()">
+                            <p class="form-disclaimer">
+                                *This form is here only for layout demonstration. The entered data is not sent anywhere.
+                            </p>
+                            <div class="input-wrap">
+                                <input type="text" class="form-input name" placeholder="Vložte jméno">
+                            </div>
+                            <div class="input-wrap">
+                                <input type="text" class="form-input lastname" placeholder="Vložte příjmení">
+                            </div>
+                            <div class="input-wrap">
+                                <input type="text" class="form-input email" placeholder="Vložte email">
+                            </div>
+                            <div class="input-wrap">
+                                <input type="text" class="form-input phone" placeholder="+45 228973147">
+                            </div>
+                            <div class="required-fields">
+                                Please fill in all the fields
+                            </div>
+                            <div class="input-wrap">
+                                <button class="btn alert-btn">ZDARMA REGISTRACE*</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </section>
+            <section class="section-about">
+                <h2 class="section-heading animated">
+                    Výhody NFT&Holder
+                </h2>
+                <div class="container about-cards-wrapper flex just-btwn" id="benefits">
+                    <div class="about-card animated">
+                        <div class="about-card-upper flex center just-btwn">
+                            <div class="card-heading-wrapper flex center">
+                                <img src="assets/img/svg/about-card-001.svg" alt="graphics" class="about-card-img" loading="lazy">
+                                <h4 class="card-heading text-colored">
+                                    Lukrativní aktiva
+                                </h4>
+                            </div>
+                        </div>
+                        <div class="about-card-lower">
+                            <p class="card-text">
+                                Tento systém byl vytvořen tak, aby držel krok s nejslibnějšími trendy, čímž se uživatelé dostávají do výhody. Myšlenka NFT&Holder byla jednoznačná: <strong>umožnit každému uživateli využívat automatickou platformu, a to i přesto, že většina uživatelů internetu není obeznámena s NFT ani kryptoměnami.</strong>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="about-card animated">
+                        <div class="about-card-upper flex center just-btwn">
+                            <div class="card-heading-wrapper flex center">
+                                <img src="assets/img/svg/about-card-002.svg" alt="user" class="about-card-img" loading="lazy">
+                                <h4 class="card-heading text-colored">
+                                    Vynikající zákaznický servis
+                                </h4>
+                            </div>
+                        </div>
+                        <div class="about-card-lower">
+                            <p class="card-text">
+                                Společnost NFT&Holders má specializované oddělení péče o zákazníky, které <strong>vám pomůže s vašimi případnými dotazy nebo problémy</strong>. Oddělení zákaznického servisu je otevřeno 24 hodin denně, sedm dní v týdnu.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="about-card animated">
+                        <div class="about-card-upper flex center just-btwn">
+                            <div class="card-heading-wrapper flex center">
+                                <img src="assets/img/svg/about-card-003.svg" alt="money" class="about-card-img" loading="lazy">
+                                <h4 class="card-heading text-colored">
+                                    Je služba NFT&Holder zdarma?
+                                </h4>
+                            </div>
+                        </div>
+                        <div class="about-card-lower">
+                            <p class="card-text">
+                                Po aktivaci účtu budete vyzváni k provedení prvního počátečního vkladu. Tyto peníze vám umožní obchodovat s aktivy, protože slouží jako váš obchodní kapitál. <strong>Neúčtujeme žádné skryté poplatky a všechny peníze, které vložíte a vyděláte, jsou vaše a můžete si je kdykoli vybrat.</strong>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="about-card animated">
+                        <div class="about-card-upper flex center just-btwn">
+                            <div class="card-heading-wrapper flex center">
+                                <img src="assets/img/svg/about-card-004.svg" alt="profit" class="about-card-img" loading="lazy">
+                                <h4 class="card-heading text-colored">
+                                    Mimořádný příjem
+                                </h4>
+                            </div>
+                        </div>
+                        <div class="about-card-lower">
+                            <p class="card-text">
+                                Tento obchodní systém má vysokou míru zisku a každý, kdo používá NFT&Holder, může úspěšně investovat bez rizika na plném autopilotovi. Průměrný příjem uživatelů platformy se pohybuje kolem +4400 USD každý měsíc. <strong>NFT&Holder si můžete vyzkoušet sami a těšit se z šílených zisků! Pospěšte si, počet míst je omezen!</strong>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="container about-wrapper flex" id="about">
+                    <img src="assets/img/svg/about-img.svg" alt="about" class="about-img animated" loading="lazy">
+                    <div class="about-text-part">
+                        <h2 class="section-heading animated">
+                            O společnosti <br> 
+                            NFT&Horders
+                        </h2>
+                        <p class="card-text animated">
+                            Platforma <strong>NFT&Holder</strong> byla navržena tak, aby umožnila všem typům investorů prozkoumat úžasné obchodní příležitosti. Software je 100% automatizovaný a spravuje digitální aktiva pomocí připravených obchodních strategií i nejmodernějších technologií. Tento software usnadňuje lidem vydělávání peněz, což znamená, že ať už jste nováček, nebo zkušený investor, stále můžete využívat výhod obchodování s NFT a kryptoměnami. 
+                            <br><br>
+                            <strong>NFT&Holder</strong> se stará o své zákazníky a každému členovi přiděluje profesionálního specialistu, který zodpoví všechny vaše dotazy a pomůže vám program nastavit a aktivovat. Přejděte na nejslibnější projekty ve světě NFT a kryptoměn.
+                        </p>
+                        <button class="btn animated" onclick="scrollToElem('#lower-form')">
+                            ZDARMA REGISTRACE
+                        </button>
+                    </div>
+                </div>
+            </section>
+            <section class="section-questions flex">
+                <div class="section-questions-half left flex just-end" id="bitcoin">
+                    <div class="section-container">
+                        <h2 class="section-heading animated">
+                            Co je to bitcoin?
+                        </h2>
+                        <p class="card-text animated">
+                            Pochopení toho, co je Bitcoin, může být klíčem ke správnému začátku obchodování. Abychom to vysvětlili ve zkratce, Bitcoin je digitální aktivum, které je dostupné po celém světě a lze ho používat k mezinárodním nákupům.
+                            <br><br>
+                            Hlavní výhodou Bitcoinu je decentralizované aktivum, což znamená, že ke schválení transakce nemusíte procházet bankovními nebo státními předpisy. Místo toho je každá transakce uložena na veřejném serveru (Blockchain), což zabraňuje podvodným transakcím.
+                            <br><br>
+                            Chcete-li Bitcoin koupit, musíte si zřídit digitální peněženku; tento finanční nástroj lze získat na mnoha různých obchodních platformách. Mějte na paměti, že každá platforma vám může účtovat jiný poplatek za používání této služby, ale obvykle není příliš vysoký. Každá peněženka s Bitcoiny je dodávána se soukromým klíčem, který musíte uložit na bezpečném místě; pokud tak neučiníte, mohou být vaše finanční prostředky navždy ztraceny kvůli silnému šifrování těchto peněženek.
+                            <br><br>
+                            Kryptografické transakce se provádějí pomocí speciálních klíčů, které zaručují bezpečnost finančních prostředků. Tento klíč je řádek kódu, který slouží ke sledování vlastnictví převáděných prostředků. Díky tomu je provedení každé transakce bezpečnější.
+                        </p>
+                    </div>
+                    <img src="assets/img/svg/bitcoin-decor.svg" alt="bitcoin" class="questions-decor left">
+                </div>
+                <div class="section-questions-half right" id="nft">
+                    <div class="section-container">
+                        <h2 class="section-heading animated">
+                            Co je to NFT?
+                        </h2>
+                        <p class="card-text animated">
+                            NFT neboli non-fungible token je účetní jednotka, která vytváří digitální záznam jakékoli jedinečné položky. Může jít o obrazy, fotografie, videa, hudbu, gify - zkrátka jakýkoli obsah, který předstírá, že má nějakou jedinečnost. Sběratelé, hráči a milovníci umění si jich velmi cení a nakupují a prodávají NFT v aukcích.
+                            <br><br>
+                            Stejné tokeny jsou uloženy v takzvaném blockchainu - obrovském řetězci bloků, z nichž každý obsahuje informace. Oproti například serverům, kde jsou data uložena na jednom místě, mohou být tyto bloky umístěny na mnoha zařízeních v různých částech světa.
+                        </p>
+                        <h4 class="action-heading animated">
+                            začněte vydělávat se svým osobním manažerem
+                        </h4>
+                        <button class="btn animated" onclick="scrollToElem('#lower-form')">
+                            ZDARMA REGISTRACE
+                        </button>
+                    </div>
+                    <img src="assets/img/svg/nft-decor.svg" alt="bitcoin" class="questions-decor right">
+                </div>
+            </section>
+            <section class="section-registration">
+                <div class="container">
+                    <h2 class="section-heading animated">
+                        ZAČNĚTE ZMĚNIT SVŮJ ŽIVOT OD DNES
+                    </h2>
+                    <div id="lower-form" class="hero-form-wrapper form animated">
+                        <form action="thankyou.html" onsubmit="event.preventDefault(); formSubmission()">
+                            <p class="form-disclaimer">
+                                *This form is here only for layout demonstration. The entered data is not sent anywhere.
+                            </p>
+                            <div class="input-wrap">
+                                <input type="text" class="form-input name" placeholder="Vložte jméno">
+                            </div>
+                            <div class="input-wrap">
+                                <input type="text" class="form-input lastname" placeholder="Vložte příjmení">
+                            </div>
+                            <div class="input-wrap">
+                                <input type="text" class="form-input email" placeholder="Vložte email">
+                            </div>
+                            <div class="input-wrap">
+                                <input type="text" class="form-input phone" placeholder="+45 228973147">
+                            </div>
+                            <div class="required-fields">
+                                Please fill in all the fields
+                            </div>
+                            <div class="input-wrap">
+                                <button class="btn alert-btn">ZDARMA REGISTRACE*</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="container flex center just-btwn">
+                <div class="copyright">
+                    NFT&Holder @ <span class="year">2022</span>. All rights reserved.
+                </div>
+                <div class="policies flex"> 
+                    <a href="javascript:void(0)" class="alterlink" data-name="terms">Term and conditions</a>
+                    <a href="javascript:void(0)" class="alterlink" data-name="policy">Privacy Policy</a>  
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
